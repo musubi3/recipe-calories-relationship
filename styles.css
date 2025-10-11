@@ -13,11 +13,11 @@ body {
 a {
   color: oklch(from var(--color-accent) 65% c h);
   text-decoration: none;
+  transition: all 0.2s ease;
 }
 
 a:hover {
   color: oklch(from var(--color-accent) 80% c h);
-  transition: all 0.2s ease;
 }
 
 .content {
