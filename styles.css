@@ -112,6 +112,25 @@
   --column-text: oklch(85% 5% 200);
 }
 
+/* ANIMATIONS */
+.content>* {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.content .project-header { animation-delay: 0.2s; }
+.content .project-toc { animation-delay: 0.4s; }
+.content .project-section { animation-delay: 0.5s; }
+
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 body {
   font: 100%/1.5 system-ui;
   margin-top: 0;
@@ -119,6 +138,7 @@ body {
   min-height: 100vh;
   background-color: canvas;
   color: canvastext;
+  overflow-anchor: none;
 }
 
 a {
@@ -424,6 +444,7 @@ th {
 }
 
 tr:hover {
+  transition: all 0.2s ease;
   background: var(--table-hover);
 }
 
