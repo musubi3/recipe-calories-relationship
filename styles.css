@@ -33,7 +33,7 @@ code {
 .table-container {
   background: var(--card);
   padding: 1.5em;
-  border-radius: 8px;
+  border-radius: 8px;;
   box-shadow: 0 2px 6px var(--card-shadow);
   border: 1px solid var(--card-border)
 }
@@ -51,9 +51,11 @@ code {
 }
 
 .cleaning-steps {
-  background: var(--toc);
+  background: var(--card);  
+  border: 1px solid var(--card-border);
+  box-shadow: 0 4px 12px var(--card-shadow);
   padding: 1.5em 2em;
-  border-radius: 8px;
+  border-radius: 8px;;
   margin: 1.5em 0;
 }
 
@@ -67,14 +69,14 @@ code {
   margin: 2em 0;
   background: var(--card);
   padding: 1.5em;
-  border-radius: 8px;
+  border-radius: 8px;;
   box-shadow: 0 2px 6px var(--card-shadow);
   border: 1px solid var(--card-border);
 }
 
 .plot-container iframe {
   border: 1px solid oklch(85% 3% 200);
-  border-radius: 4px;
+  border-radius: 8px;;
 }
 
 .loader {
@@ -85,7 +87,7 @@ code {
   height: 450px;
   background: #ffffff;
   border: 1px solid oklch(85% 3% 200);
-  border-radius: 4px;
+  border-radius: 8px;;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -111,10 +113,14 @@ code {
 }
 
 .hypothesis-card {
-  background: var(--toc);
+  background: var(--card);
   padding: 1.5em;
-  border-radius: 8px;
+  border-radius: 8px;;
   border-left: 4px solid var(--color-accent);
+  border-top: 1px solid var(--card-border);
+  border-right: 1px solid var(--card-border);
+  border-bottom: 1px solid var(--card-border);
+  box-shadow: 0 4px 12px var(--card-shadow);
   margin: 1.5em 0;
 }
 
